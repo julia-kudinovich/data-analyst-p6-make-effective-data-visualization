@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+        <style>
+            h2 {
+                text-align: center;
+            }
+        </style>
+        <script type="text/javascript">
+              function draw(data) {
+
+              /*
+                D3.js setup code
+              */
+                  "use strict";
+                  var margin = 75,
+                      width = 1400 - margin,
+                      height = 600 - margin;
+
+                  d3.select("body")
+                    .append("h2")
+                    .text("Titanic survival by passenger class")
+
+                  var svg = d3.select("body")
+                    .append("svg")
+                    .attr("width", width + margin)
+                    .attr("height", height + margin)
+                    .append('g')
+                    .attr('class','chart');
+
+              /*
+                Dimple.js Chart construction code
+              */
+
+                  var myChart = new dimple.chart(svg, data);
+                  var x = myChart.addCategoryAxis("x", ["Pclass"]);
+                  x.title = "Passenger Class";
+                  var y = myChart.addPctAxis("y", "PassengerId");
+                  y.title = "Survival Percent";
+                  var series = myChart.addSeries(["Survived"], dimple.plot.bar);
+
+                  myChart.addLegend(margin + 50, 5, 380, 20, "left");
+                  //Change colors of categories
+                  myChart.assignColor("0", "rgb(251, 128, 114)", 1);
+                  myChart.assignColor("1", "rgb(150, 186, 88)",1);
+
+                  myChart.draw();
+
+                };
+
+        </script>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            d3.csv("titanic_data.csv", draw);
+        </script>
+    </body>
+</html>
