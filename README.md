@@ -36,7 +36,7 @@ x axis corresponds to the class of the passenger (1, 2, 3) and y axis correspond
 * Legend and tooltip do not help much in making the graph clear. I would even say tat they make it harder to understand the graph instead of helping. PassengerId plus some percent value is the most confusing value in the tooltip.
 
 
-In my final version, I have fixed these formatting issues.
+In my final version, I have fixed these formatting and data representation issues.
 
 
 # Resources
