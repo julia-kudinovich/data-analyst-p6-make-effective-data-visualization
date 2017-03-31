@@ -10,8 +10,12 @@ Plot show that the better the class the higher is the percentage of survivals in
 # Design
 
 
-In my design, I decided to use vertical 100% bar plot to show correlation between survival and passenger class.
-Bars on the plot are colored green/red which corresponds to survival/not survival of a passenger. x axis corresponds to the class of the passenger (1, 2, 3) and y axis corresponds to the percentage of survived/not survived passengers.
+In my design, I decided to use vertical 100% bar plot to show correlation between survival and passenger class. This type of graph is chosen because it represents a proportion of survived/died passengers in total passenger count very well.
+
+Bars on the plot are colored green/red which corresponds to proration of survival/not survival of the passengers in the specific class. The choice of colors is explained by the common usage of green/red colors when direct opposites needed to be displayed.
+
+x axis corresponds to the class of the passenger (1, 2, 3) and y axis corresponds to the percentage of survived/not survived passengers since I am using the vertical 100% bar plot. Should I choose horizontal 100% bar plot axes would have been switched.
+
 
 
 
