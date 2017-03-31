@@ -1,11 +1,11 @@
-#Summary
+# Summary
 
 This visualization shows survivals distribution between 3 different passenger classes. It is built based on the Titanic dataset which contains demographics and passenger information from a subset of the 2224 passengers and crew on board the Titanic.
 
 Plot show that the better the class the higher is the percentage of survivals in that class.  First class passengers had 67% survival rate while 3rd class passengers only had 22% survival rate.
 
 
-#Design
+# Design
 
 
 In my design, I decided to use vertical 100% bar plot to show correlation between survival and passenger class.
@@ -13,7 +13,7 @@ Bars on the plot are colored green/red which corresponds to survival/not surviva
 
 
 
-#Feedback
+# Feedback
 
 
 Most mentioned points I have gathered from several people
@@ -32,7 +32,7 @@ Percent of people survived in each class decreases from 1st to 2nd to 3rd class.
 In my final version, I have fixed these formatting issues.
 
 
-#Resources
+# Resources
 
 [Dimple.js documentation](https://github.com/PMSI-AlignAlytics/dimple/wiki)
 
