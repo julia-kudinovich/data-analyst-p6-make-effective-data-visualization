@@ -21,19 +21,20 @@ x axis corresponds to the class of the passenger (1, 2, 3) and y axis correspond
 
 # Feedback
 
-
-Most mentioned points I have gathered from several people
-
+### Person 1
 * From the graph it is clearly seen that there is a relationship between survival and passenger class.
+* One thing that is not clear straight away is what 0 or 1 on the legend mean. Even though it gets clear after the inspection of the graph the legend needs to be changed to something more concrete. Same goes for the tooltip.
 
-* Percent of people died in each class increases from 1st to 2nd to 3rd classes.
-Percent of people survived in each class decreases from 1st to 2nd to 3rd class.
 
-* One thing that is not clear straight away is what 0 or 1 on the legend mean. Even though it gets clear after the inspection of the graph the legend needs to be changed to something more concrete.
+### Person 2
+* The main takeaway form the graph is that percent of people died in each class increases from 1st to 2nd to 3rd class. Percent of people survived in each class decreases from 1st to 2nd to 3rd class.
+* It is hard to read axes titles and legend: they are too small.
+* Tooltip is confusing. What does PassengerId percent mean?
 
-* Legend and axes titles are too small
+### Person 3
+* The context is not clear straight away. I had to think for some time
+* Legend and tooltip do not help much in making the graph clear. I would even say tat they make it harder to understand the graph instead of helping. PassengerId plus some percent value is the most confusing value in the tooltip.
 
-* Tooltip is confusing. What does PassangerID percent mean?
 
 In my final version, I have fixed these formatting issues.
 
