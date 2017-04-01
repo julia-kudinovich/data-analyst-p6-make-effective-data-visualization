@@ -35,6 +35,12 @@ x axis corresponds to the class of the passenger (1, 2, 3) and y axis correspond
 * The context is not clear straight away. I had to think for some time
 * Legend and tooltip do not help much in making the graph clear. I would even say tat they make it harder to understand the graph instead of helping. PassengerId plus some percent value is the most confusing value in the tooltip.
 
+### Reviewer notes
+
+* The visualization needs context. A reader should be able to look at it and understand, without any additional context. Think of it as being published in a magazine, and a random reader flips the page and sees it. Will she/he understand it? How to fix communication in order to make sure your reader will right away understand the message you want to convey?
+
+* Add your source, that is really important. If not in the introduction, you can add it in small sized font below the chart, or somewhere else it is convenient. But if the data is not gathered by you, but by someone else, you need to add the source and a link to it.
+
 
 In my final version, I have fixed these formatting and data representation issues.
 

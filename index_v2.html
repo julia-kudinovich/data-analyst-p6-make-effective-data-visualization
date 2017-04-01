@@ -3,10 +3,8 @@
     <head>
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="http://d3js.org/d3.v3.min.js"></script>
         <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
-         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <style>
             h2 {
                 text-align: center;
@@ -15,7 +13,6 @@
               font-size: 15px !important;
             }
         </style>
-
         <script type="text/javascript">
               function draw(data) {
 
@@ -24,14 +21,14 @@
               */
                   "use strict";
                   var margin = 75,
-                      width = 1000 - margin,
-                      height = 500 - margin;
+                      width = 1400 - margin,
+                      height = 600 - margin;
 
-                  d3.select("#graph")
+                  d3.select("body")
                     .append("h2")
-                    .text("Were wealthier passengers more likely to survive the Titanic disaster?")
+                    .text("Titanic survival by passenger class")
 
-                  var svg = d3.select("#graph")
+                  var svg = d3.select("body")
                     .append("svg")
                     .attr("width", width + margin)
                     .attr("height", height + margin)
@@ -54,8 +51,8 @@
                   legend.fontSize = "15px";
 
                   //Change colors of categories
-                  myChart.assignColor("Died", "rgb(204, 22, 25)", 1);
-                  myChart.assignColor("Survived", "rgb(8, 165, 3)",1);
+                  myChart.assignColor("Died", "rgb(251, 128, 114)", 1);
+                  myChart.assignColor("Survived", "rgb(150, 186, 88)",1);
 
                   //Change tooltip contents
                   series.getTooltipText = function (d) {
@@ -82,16 +79,5 @@
             }, draw);
 
         </script>
-        
-        <div class="row">
-          <div id="graph" class="col-md-12"></div>
-        </div>
-        <div class="row">
-          <div id="description" class="col-md-12">
-            The graph above shows percentages the of survival/non-survival across different classes of passengers on The Titanic. First class corresponds to the most expensive tickets/wealthier passengers, while third class corresponds to the least epxensive tickets.
-            The dataset used contains demographics and passenger information from a subset of the 2224 passengers and crew on board the Titanic. Source: <a href="https://www.udacity.com/api/nodes/5420148578/supplemental_media/titanic-datacsv/download">Titanic Data</a>
-
-          </div>
-        </div>
     </body>
 </html>
