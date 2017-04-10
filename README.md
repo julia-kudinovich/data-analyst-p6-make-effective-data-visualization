@@ -1,5 +1,7 @@
 Data Analyst Nanodegree Project 6: Make Effective Data Visualization
 
+[View The Visualization](http://htmlpreview.github.io/?https://github.com/julia-kudinovich/data-analyst-p6-make-effective-data-visualization/blob/master/index_final.html)
+
 # Summary
 
 This visualization shows survivals distribution between 3 different passenger classes. It is built based on the Titanic dataset which contains demographics and passenger information from a subset of the 2224 passengers and crew on board the Titanic.
